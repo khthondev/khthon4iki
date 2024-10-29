@@ -174,3 +174,4 @@ window.addEventListener('DOMContentLoaded', initAsciiAnimation);
 // Initialize Telegram WebApp
 window.Telegram.WebApp.ready();
 
+window.Telegram.WebApp.expand();
