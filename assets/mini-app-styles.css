@@ -1,0 +1,135 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Full viewport size */
+  html, body {
+    width: 100%;
+    height: 665px;
+    background-color: #000; /* Background color */
+    font-family: 'JetBrains Mono', monospace;
+    overflow: hidden;
+    color: #00FF00;
+  }
+
+  /* Landing page iFrame */
+  .iframe-container {
+    position: relative;
+    top: 0; /* Remove in case of conflicts */
+    left: 0; /* Remove in case of conflicts */
+    border: .1em solid #005000; /* You can adjust or remove the border */
+    width: 96%;  /* Set a fixed width */
+    height: 360px; /* Set a fixed height */
+    overflow: hidden; /* Prevent scrolling inside the iframe */
+    margin: 2% 2% .5em 2%;
+  }
+
+  /* Text styles */
+
+  h1 {
+    font-family: "Tiny5", sans-serif;
+    color: #ffff00; 
+    font-size: 3em;
+    line-height: .8em;
+  }
+
+  h2 {
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  /* Buttons */
+  /* Adjust the size of the svg */
+
+  .btn-icon svg {
+    width: 100%; /* Make svg fill the container's width */
+    height: 100%; /* Make svg fill the container's height */
+  }
+
+  .btn-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .75em;
+  }
+
+  .btn {
+    font-size: 1.5em;
+    letter-spacing: .05em;
+    padding: .75em;
+    margin: 0 2%;
+    color: #00FF00;
+    border: .1em #008000 solid;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    font-weight: bold;
+    letter-spacing: .075em;
+    border: .1em #00FF00 solid;
+  }
+
+  .btn-icon {
+    position: relative;
+    top: -.25em;
+    left: 0;
+    height: .75em;
+    width: .75em;
+    fill: #FFFF00;
+  }
+
+  .btn-menu {
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.4em;
+    padding: .6em.75em;
+    margin: 0 2%;
+    color: #00FF00;
+    background-color: #000;
+    border: .075em #008000 solid;
+    text-decoration: none;
+    gap: .4em;
+    letter-spacing: -.05em;
+  }
+
+  .btn-menu:hover {
+    border: .075em #00FF00 solid;
+    color: #FFFF00;
+  }
+
+  #btn-disabled {
+    color: #005000;
+    border: .1em #005000 solid;
+  }
+
+  #btn-disabled svg {
+    fill: #005000;
+  }
+
+  /* Hero section */
+
+  .hero-content {
+    position: relative;
+    text-align: center;
+    top: 0; /* Remove in case of conflicts */
+    left: 0; /* Remove in case of conflicts */
+    width: 100%;
+    /* border: 2px solid #008000; */
+    width: 350px;  /* Set a fixed width */
+    overflow: hidden; /* Prevent scrolling inside the iframe */
+    transform: translate(10%, 0);
+  }
+
+  .hero-content p {
+    margin-top: 1em;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+  }
