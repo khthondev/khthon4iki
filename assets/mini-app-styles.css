@@ -18,7 +18,7 @@
   #app {
     display: flex;
     flex-direction: column;
-    height: 110%;
+    height: 100%;
   }
 
   /* Landing page iFrame */
@@ -36,10 +36,10 @@
   /* Text styles */
 
   h1 {
-    font-family: "Tiny5", sans-serif;
-    color: #ffff00; 
-    font-size: 3em;
-    line-height: .8em;
+    color: #FFFF00;
+    font-size: 1.75em;
+    line-height: 2em;
+    letter-spacing: -.05em;
   }
 
   h2 {
@@ -47,9 +47,10 @@
     font-size: 20px;
   }
 
+  /* MAIN MENU */
   /* Buttons */
-  /* Adjust the size of the svg */
 
+  /* Adjust the size of the svg */
   .btn-icon svg {
     width: 100%; /* Make svg fill the container's width */
     height: 100%; /* Make svg fill the container's height */
@@ -63,29 +64,13 @@
     gap: .75em;
   }
 
-  .btn {
-    font-size: 1.5em;
-    letter-spacing: .05em;
-    padding: .75em;
-    margin: 0 2%;
-    color: #00FF00;
-    border: .1em #008000 solid;
-    text-decoration: none;
-  }
-
-  .btn:hover {
-    font-weight: bold;
-    letter-spacing: .075em;
-    border: .1em #00FF00 solid;
-  }
-
   .btn-icon {
     position: relative;
     top: -.25em;
     left: 0;
     height: .75em;
     width: .75em;
-    fill: #FFFF00;
+    fill: #00FF00;
   }
 
   .btn-menu {
@@ -95,7 +80,7 @@
     flex-direction: row;
     align-items: center;
     font-size: 1.4em;
-    padding: .6em.75em;
+    padding: .75em.75em;
     margin: 0 2%;
     color: #00FF00;
     background-color: #000;
@@ -110,6 +95,10 @@
     color: #FFFF00;
   }
 
+  .btn-menu:hover svg {
+    fill: #FFFF00;
+  }
+
   #btn-disabled {
     color: #005000;
     border: .1em #005000 solid;
@@ -119,23 +108,46 @@
     fill: #005000;
   }
 
-  /* Hero section */
-
-  .hero-content {
+  .menu-section-header {
     position: relative;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    top: 0; /* Remove in case of conflicts */
-    left: 0; /* Remove in case of conflicts */
     width: 100%;
-    /* border: 2px solid #008000; */
-    width: 350px;  /* Set a fixed width */
-    overflow: hidden; /* Prevent scrolling inside the iframe */
-    transform: translate(10%, 0);
+    margin: .5em 0 1.5em 0;
   }
 
-  .hero-content p {
-    margin-top: 1em;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    line-height: 1.2em;
+  .menu-section-header h1 {
+    font-size: 1.75m;
+  }
+
+  .ascii-divider {
+    font-size: .85em;
+    color: #00FF00;
+  }
+
+  .ascii-deco {
+    font-size: 1em;
+    align-content: center;
+    color: #008000;
+  }
+
+  .app-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+  }
+
+  .app-info {
+    font-style: italic;
+    color: #00AA00;
+    padding: 0 5%;
+    margin: 1em 0;
+  }
+
+  .app-info strong {
+    color: #FFFF00;
   }
