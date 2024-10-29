@@ -8,7 +8,7 @@
   /* Full viewport size */
   html, body {
     width: 100%;
-    height: 665px;
+    height: 80vh;
     background-color: #000; /* Background color */
     font-family: 'JetBrains Mono', monospace;
     overflow: hidden;
