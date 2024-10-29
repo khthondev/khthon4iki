@@ -15,6 +15,12 @@
     color: #00FF00;
   }
 
+  #app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   /* Landing page iFrame */
   .iframe-container {
     position: relative;
