@@ -18,7 +18,7 @@
   #app {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 110%;
   }
 
   /* Landing page iFrame */
