@@ -175,3 +175,10 @@ window.addEventListener('DOMContentLoaded', initAsciiAnimation);
 window.Telegram.WebApp.ready();
 
 window.Telegram.WebApp.expand();
+
+const app = document.getElementById('app');
+app.style.height = `${window.innerHeight}px`;
+
+window.addEventListener('resize', () => {
+  app.style.height = `${window.innerHeight}px`;
+});
