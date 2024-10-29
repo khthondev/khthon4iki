@@ -37,7 +37,7 @@
 
   h1 {
     color: #FFFF00;
-    font-size: 1.75em;
+    font-size: 1.5em;
     line-height: 2em;
     letter-spacing: -.05em;
   }
@@ -118,7 +118,8 @@
   }
 
   .menu-section-header h1 {
-    font-size: 1.75m;
+    font-size: 1.75em;
+    text-wrap: nowrap;
   }
 
   .ascii-divider {
@@ -127,7 +128,7 @@
   }
 
   .ascii-deco {
-    font-size: 1em;
+    font-size: .75em;
     align-content: center;
     color: #008000;
   }
