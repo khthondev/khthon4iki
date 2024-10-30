@@ -176,6 +176,7 @@
     font-size: 1.5em;
     outline: none;
     box-sizing: border-box;
+    border-radius: 0;
     border-bottom: .075em #008000 solid;
     border-top: none;
     border-right: none;
