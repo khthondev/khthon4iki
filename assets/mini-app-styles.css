@@ -131,6 +131,7 @@
 
   .menu-section-header h1 {
     font-size: 1.7em;
+    letter-spacing: -.05em;
   }
 
   .ascii-divider {
