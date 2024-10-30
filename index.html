@@ -11,20 +11,40 @@
 </head>
 
 <body>
-  <div class="mini-app-ascii">
-    <!-- Embedding the child project -->
-    <iframe src="ascii-core.html" class="iframe-container"></iframe>
-  </div>
+  
 
   <div class="container">
     <div class="menu-section-header">
+      <div class="mini-app-ascii">
+        <!-- Embedding the child project -->
+        <iframe src="ascii-core.html" class="iframe-container"></iframe>
+      </div>
+
       <div class="app-title">
-          <div class="ascii-divider">┄┄┉┉┅┅* ХТОНЧИКИ / ГЛАВА I *┅┅┉┉┄┄</div>
-          <h1>ИСКИНТ-0: Я ТВОЙ ДРУГ</h1>
-          <p>Древнее зло хочет всё шаблонизировать! Создавай своего хтончика и погнали спасать мир.</p>
+          <div class="ascii-divider">┄┄┉┉┅┅* УЧЕБНОЕ ПРИКЛЮЧЕНИЕ *┅┅┉┉┄┄</div>
+          <h1>ИСКИНТ-0: ДРЕВНЕЕ ЗЛО</h1>
+
+          <!--
+          <div class="course-progress">
+            <p>Прогресс 0/12</p>
+          </div>
+          -->
+
+          <p>В этом курсе ты узнаешь всю базу, необходимую для создания увлекательных приключений, а также надерёшь задницу разбушевавшемуся искусственному интеллекту.</p>
+      </div>
+
+      <div class="container">
+        <div class="btn-panel">
+          <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
+              <div class="btn-label">
+                <p>НАЧАТЬ ПРИКЛЮЧЕНИЕ</p>
+              </div>
+          </button>
+        </div>
       </div>
     </div>
 
+    <!--
     <div class="btn-panel">
       <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
           <div class="btn-label">
@@ -32,7 +52,6 @@
           </div>
       </button>
 
-      <!--
       <button class="btn-menu">
         <div class="btn-icon">
                 <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
