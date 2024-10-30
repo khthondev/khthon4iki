@@ -15,6 +15,10 @@
     color: #00FF00;
   }
 
+  .container {
+    margin: 0 2%;
+  }
+
   #app {
     display: flex;
     flex-direction: column;
@@ -28,9 +32,9 @@
     left: 0; /* Remove in case of conflicts */
     border: .1em solid #005000; /* You can adjust or remove the border */
     width: 96%;  /* Set a fixed width */
-    height: 460px; /* Set a fixed height */
+    height: 390px; /* Set a fixed height */
     overflow: hidden; /* Prevent scrolling inside the iframe */
-    margin: 2% 2% 1em 2%;
+    margin: 2% 2% .55em 2%;
   }
 
   /* Text styles */
@@ -79,9 +83,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.4em;
+    font-size: 1.3em;
     padding: .8em .65em;
-    margin: 0 2%;
     color: #00FF00;
     background-color: #000;
     border: .075em #008000 solid;
@@ -127,15 +130,17 @@
     text-align: center;
     width: 100%;
     margin: 0 0 1em 0;
+    border: .075em #005000 solid;
+    padding: 1em 0;
   }
 
   .menu-section-header h1 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     letter-spacing: -.05em;
   }
 
   .ascii-divider {
-    font-size: .95em;
+    font-size: 1em;
     color: #00FF00;
   }
 
@@ -146,9 +151,75 @@
   }
 
   .app-title {
+    margin: 0 4% .75em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .app-title p {
+    font-size: 1.1em;
+  }
+
+  /* Inputs */
+  label {
+    font-size: 1.1em;
+  }
+
+  input {
+    width: 100%;
+    color: #00FF00;
+    font-family: 'JetBrains Mono', monospace;
+    background: none;
+    font-size: 1.5em;
+    outline: none;
+    box-sizing: border-box;
+    border-bottom: .075em #008000 solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: .25em;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  input:hover {
+    border-color: #00FF00; /* Slightly darker border on hover */
+  }
+  
+  /*
+  input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  */
+
+  input::placeholder {
+    color: #008000;
+  }
+
+  .text-input {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 1.5em;
+  }
+
+  .tip {
+    margin-bottom: 1em;
+    color: #00FF00;
+    padding-bottom: 1em;
+    border-bottom: .075em #003000 solid;
+  }
+
+  .tip-input {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0 0 1em 0;
+    border: .075em #005000 solid;
+    padding: 1em 4% 0;
   }
