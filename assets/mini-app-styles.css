@@ -28,16 +28,16 @@
     left: 0; /* Remove in case of conflicts */
     border: .1em solid #005000; /* You can adjust or remove the border */
     width: 96%;  /* Set a fixed width */
-    height: 360px; /* Set a fixed height */
+    height: 460px; /* Set a fixed height */
     overflow: hidden; /* Prevent scrolling inside the iframe */
-    margin: 2% 2% .5em 2%;
+    margin: 2% 2% 1em 2%;
   }
 
   /* Text styles */
 
   h1 {
     color: #FFFF00;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 2em;
     letter-spacing: -.05em;
   }
@@ -77,16 +77,16 @@
     font-family: 'JetBrains Mono', monospace;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     font-size: 1.4em;
-    padding: .75em.75em;
+    padding: .8em .65em;
     margin: 0 2%;
     color: #00FF00;
     background-color: #000;
     border: .075em #008000 solid;
     text-decoration: none;
-    gap: .4em;
+    gap: 0;
     letter-spacing: -.05em;
   }
 
@@ -108,18 +108,29 @@
     fill: #005000;
   }
 
+  .btn-label {
+    font-size: 1.05em;
+    font-weight: 900;
+    letter-spacing: -.075em;
+  }
+
+  .btn-info {
+    font-size: .7em;
+    text-align: center;
+    color: #00FF00;
+  }
+
   .menu-section-header {
     position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 100%;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1em 0;
   }
 
   .menu-section-header h1 {
-    font-size: 1.5em;
-    text-wrap: nowrap;
+    font-size: 1.7em;
   }
 
   .ascii-divider {
@@ -128,9 +139,9 @@
   }
 
   .ascii-deco {
-    font-size: .75em;
+    font-size: 1em;
     align-content: center;
-    color: #008000;
+    color: #FFFF00;
   }
 
   .app-title {
