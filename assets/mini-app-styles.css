@@ -11,6 +11,7 @@
     height: 100%;
     background-color: #000; /* Background color */
     font-family: 'JetBrains Mono', monospace;
+    letter-spacing: -.05em;
     overflow: hidden;
     color: #00FF00;
   }
@@ -32,9 +33,9 @@
     left: 0; /* Remove in case of conflicts */
     border: .1em solid #005000; /* You can adjust or remove the border */
     width: 96%;  /* Set a fixed width */
-    height: 390px; /* Set a fixed height */
+    height: 330px; /* Set a fixed height */
     overflow: hidden; /* Prevent scrolling inside the iframe */
-    margin: 2% 2% .55em 2%;
+    margin: 0 2% .55em 2%;
   }
 
   /* Text styles */
@@ -43,7 +44,6 @@
     color: #FFFF00;
     font-size: 2em;
     line-height: 2em;
-    letter-spacing: -.05em;
   }
 
   h2 {
@@ -79,23 +79,24 @@
 
   .btn-menu {
     font-family: 'JetBrains Mono', monospace;
+    font-weight: 900;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.3em;
-    padding: .8em .65em;
+    font-size: 1.2em;
+    padding: .7em .65em;
     color: #00FF00;
     background-color: #000;
     border: .075em #008000 solid;
     text-decoration: none;
     gap: 0;
-    letter-spacing: -.05em;
   }
 
   .btn-menu:hover {
     border: .075em #00FF00 solid;
-    color: #FFFF00;
+    background-color: #00FF00;
+    color: #000;
   }
 
   .btn-menu:hover svg {
@@ -114,7 +115,6 @@
   .btn-label {
     font-size: 1.05em;
     font-weight: 900;
-    letter-spacing: -.075em;
   }
 
   .btn-info {
@@ -129,18 +129,17 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    margin: 0 0 1em 0;
+    margin: .5em 0 1em 0;
     border: .075em #005000 solid;
-    padding: 1em 0;
+    padding: 1em .5em;
   }
 
   .menu-section-header h1 {
-    font-size: 1.5em;
-    letter-spacing: -.05em;
+    font-size: 1.4em;
   }
 
   .ascii-divider {
-    font-size: 1em;
+    font-size: .9em;
     color: #00FF00;
   }
 
@@ -151,7 +150,8 @@
   }
 
   .app-title {
-    margin: 0 4% .75em;
+    padding: .5em 0 1em 0; 
+    margin: 0 4% .5em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,7 +160,7 @@
   }
 
   .app-title p {
-    font-size: 1.1em;
+    font-size: .9em;
   }
 
   /* Inputs */
@@ -173,7 +173,8 @@
     color: #00FF00;
     font-family: 'JetBrains Mono', monospace;
     background: none;
-    font-size: 1.5em;
+    margin-top: .5em;
+    font-size: 1.2em;
     outline: none;
     box-sizing: border-box;
     border-radius: 0;
@@ -198,6 +199,7 @@
 
   input::placeholder {
     color: #008000;
+    font-weight: 100;
   }
 
   .text-input {
@@ -221,6 +223,14 @@
     text-align: center;
     width: 100%;
     margin: 0 0 1em 0;
-    border: .075em #005000 solid;
-    padding: 1em 4% 0;
+    padding: 1em 0 0 0;
+  }
+
+  .tip-input p {
+    font-size: .9em;
+  }
+
+  .course-progress {
+    margin-bottom: 1em;
+    color: #008000;
   }
