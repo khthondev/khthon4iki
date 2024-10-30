@@ -63,6 +63,8 @@ async function initAsciiAnimation() {
     '.': '#005000',
     '^': '#FFFF00',
     '*': '#FFFF00',
+    '@': '#008000',
+    '#': '#00AA00',
 
     // Add more mappings as needed
   };
