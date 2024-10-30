@@ -184,3 +184,9 @@ app.style.height = `${window.innerHeight}px`;
 window.addEventListener('resize', () => {
   app.style.height = `${window.innerHeight}px`;
 });
+
+if (screen.orientation) {
+  screen.orientation.lock('portrait').catch(function(error) {
+    console.error('Orientation lock failed:', error);
+  });
+}
