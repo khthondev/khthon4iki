@@ -32,7 +32,7 @@
     animation: fadeInScale 0.3s ease;
     
     /* Fixed size */
-    width: 400px; /* Set your desired width */
+    width: 392px; /* Set your desired width */
     height: auto; /* Set your desired height */
     
     /* Ensure text wraps and handles overflow */
@@ -43,7 +43,7 @@
     /* Optional: Ensure content is scrollable only when necessary */
     /* You can use overflow-y: auto; if you only want vertical scrolling */
 
-    transform: translate(0, -220%);
+    transform: translate(0, -60%);
   }
   
   /* Close button */
