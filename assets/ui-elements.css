@@ -43,7 +43,7 @@
     /* Optional: Ensure content is scrollable only when necessary */
     /* You can use overflow-y: auto; if you only want vertical scrolling */
 
-    transform: translate(0, -61%);
+    transform: translate(0, -63%);
   }
   
   /* Close button */
