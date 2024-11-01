@@ -22,11 +22,11 @@
     /* overflow-y: auto; /* Enable vertical scrolling */
   }
 
-  #app {
+  #scroll {
     display: flex;
     flex-direction: column;
     height: 100%;
-    /* overflow-y: hidden; /* Prevent double scrolling on main container */
+    overflow-y: auto; /* Prevent double scrolling on main container */
   }
 
   /* Landing page iFrame */
