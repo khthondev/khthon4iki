@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Хтончики | Главная</title>
+  <title>Хтончики | Приключения</title>
   <link rel="stylesheet" href="assets/mini-app-styles.css">
   <link rel="stylesheet" href="assets/ui-elements.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Tiny5&display=swap">
@@ -12,10 +12,20 @@
 
 <body>
   <div class="container" id="content-flex">
+    <div class="scrollable-container">
+      <div class="adventure-card">
+        <div class="adventure-card-content">
+          <h1>Неебаться Замес</h1>
+          <p>Просто пиздец какой интересный</p>
+        </div>
+      </div>
+      <!-- Add more adventure cards here if needed -->
+    </div>
+
     <div class="mini-app-ascii" id="main-screen-ascii">
       <!-- Embedding the child project -->
     </div>
-    <iframe class="iframe-container"src="display-main-screen.html"></iframe>
+    <iframe class="iframe-container"src="display-adventures-screen.html"></iframe>
   </div>
 
   <div class="container" id="bottom-menu-flex">
@@ -56,7 +66,7 @@
         </div>
       </button>
     </div>
-    <div class="footer-info"><p>@ KHTHON 2024</p></div>
+    <div class="footer-info"><p>@ KHTHON 2024</div>
   </div>
   
   <!-- Link to External JavaScript -->
