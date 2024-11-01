@@ -35,10 +35,9 @@
     top: 0; /* Remove in case of conflicts */
     left: 0; /* Remove in case of conflicts */
     border: .1em solid #005000; /* You can adjust or remove the border */
-    width: 96%;  /* Set a fixed width */
-    height: 330px; /* Set a fixed height */
+    width: 100%;  /* Set a fixed width */
+    height: 80vh; /* Set a fixed height */
     /* overflow: hidden; /* Prevent scrolling inside the iframe */
-    margin: 0 2% .55em 2%;
   }
 
   /* Text styles */
@@ -236,4 +235,70 @@
   .course-progress {
     margin-bottom: 1em;
     color: #008000;
+  }
+
+  /* Footer */
+  .footer-info {
+    width: 100%;
+    text-align: center;
+    color: #008000;
+  }
+
+  /* Navigation */
+
+  .bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 0.8em;
+    justify-content: center;
+    background-color: #000; /* Ensure it matches your design */
+    padding: 1em 0; /* Optional: Adds some padding for better appearance */
+    z-index: 1000;
+  }
+
+  .btn-bottom-menu {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 900;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .9em;
+    padding: .7em .65em;
+    color: #00FF00;
+    background-color: #000;
+    border: .075em #008000 solid;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    letter-spacing: -.075em;
+    gap: 0;
+    flex: 1; /* Make each button take equal space */
+    max-width: calc(90% / 3); /* Divide by 4 for four equal buttons */
+  }
+
+  .btn-bottom-menu:hover {
+    border: .075em #00FF00 solid;
+    background-color: #002000;
+  }
+
+  .btn-icon-bottom-menu {
+    position: relative;
+    top: -.25em;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    fill: #00FF00;
+  }
+
+  .btn-icon-bottom-menu svg {
+    width: 90%;
+    height: 90%;
+  }
+
+  #main-screen-ascii {
+    margin-top: 4%;
   }

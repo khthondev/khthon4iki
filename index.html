@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Хтончики 0.2</title>
+  <title>Хтончики | Главная</title>
   <link rel="stylesheet" href="assets/mini-app-styles.css">
   <link rel="stylesheet" href="assets/ui-elements.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Tiny5&display=swap">
@@ -11,97 +11,53 @@
 </head>
 
 <body>
-  
-
-  <div class="container" id="scroll">
-    <div class="menu-section-header">
-      <div class="mini-app-ascii">
-        <!-- Embedding the child project -->
-        <iframe src="ascii-core.html" class="iframe-container"></iframe>
-      </div>
-
-      <div class="app-title">
-          <div class="ascii-divider">┄┄┉┉┅┅* УЧЕБНОЕ ПРИКЛЮЧЕНИЕ *┅┅┉┉┄┄</div>
-          <h1>ИСКИНТ-0: ДРЕВНЕЕ ЗЛО</h1>
-
-          <!--
-          <div class="course-progress">
-            <p>Прогресс 0/12</p>
-          </div>
-          -->
-
-          <p>В этом курсе ты узнаешь всю базу, необходимую для создания увлекательных приключений, а также надерёшь задницу разбушевавшемуся искусственному интеллекту.</p>
-      </div>
-
-      <div class="container">
-        <div class="btn-panel">
-          <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
-              <div class="btn-label">
-                <p>НАЧАТЬ ПРИКЛЮЧЕНИЕ</p>
-              </div>
-          </button>
-        </div>
-      </div>
+  <div class="container">
+    <div class="mini-app-ascii" id="main-screen-ascii">
+      <!-- Embedding the child project -->
+      <iframe class="iframe-container" src="display-main-screen.html" ></iframe>
     </div>
-
-    <div class="container">
-      <div class="btn-panel">
-        <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
-            <div class="btn-label">
-              <p>НАЧАТЬ ПРИКЛЮЧЕНИЕ</p>
-            </div>
-        </button>
-      </div>
-    </div>
-
-    <!--
-    <div class="btn-panel">
-      <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
-          <div class="btn-label">
-            <p>СОЗДАТЬ ХТОНЧИКА</p>
-          </div>
-      </button>
-
-      <button class="btn-menu">
-        <div class="btn-icon">
-                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 1H0V5C0 6.65685 1.34315 8 3 8L2.03553 8.96447C1.37249 9.62751 1 10.5268 1 11.4645C1 13.4171 2.58291 15 4.53553 15C5.47322 15 6.37249 14.6275 7.03553 13.9645L8 13L8.96447 13.9645C9.62751 14.6275 10.5268 15 11.4645 15C13.4171 15 15 13.4171 15 11.4645C15 10.5268 14.6275 9.62751 13.9645 8.96447L13 8C14.6569 8 16 6.65685 16 5V1H13L8 6L3 1Z"/>
-                </svg>
-        </div>
-        <p>УЧЕБНЫЕ ПРИКЛЮЧЕНИЯ</p>
-    </button>
-
-    <button class="btn-menu">
-        <div class="btn-icon">
-                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 1V4L4.66667 5.66667L4.2 8H2V6H0V15H6V12C6 10.8954 6.89543 10 8 10C9.10457 10 10 10.8954 10 12V15H16V6H14V8H11.8L11.3333 5.66667L13 4V1H11V3H9V1H7V3H5V1H3Z"/>
-                </svg>
-        </div>
-        <p>СВОБОДНОЕ СОЗДАНИЕ</p>
-    </button>
-    
-    <button class="btn-menu">
-        <div class="btn-icon">
-                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 2H3.58579C4.49129 2 5.35971 2.35971 6 3C6.64029 3.64029 7 4.50871 7 5.41421V11H9V5.41421C9 4.50871 9.35971 3.64029 10 3C10.6403 2.35971 11.5087 2 12.4142 2H16V13H11L9 15H7L5 13H0V2Z"/>
-                </svg>
-        </div>
-        <p>ЭНЦИКЛОПЕДИЯ МАСТЕРА</p>
-    </button>
-
-    <button class="btn-menu" id="btn-disabled">
-        <div class="btn-icon">
-                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 15L0 4H2L5 7L7 1H9L11 7L14 4H16L14 15H2ZM7.5 9L6 11L7.5 13H8.5L10 11L8.5 9H7.5Z"/>
-                </svg>
-        </div>
-        <p>ДОСТИЖЕНИЯ</p>
-    </button>
-    -->
   </div>
 
-  
+  <div class="container">
+    <div class="bottom-menu">
+      <button class="btn-bottom-menu" onclick="window.location.href='char-editor-main.html';">
+        <div class="btn-icon-bottom-menu">
+          <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16L3.54223 12.3383C1.93278 11.0162 1 9.04287 1 6.96005C1 3.11612 4.15607 0 8 0C11.8439 0 15 3.11612 15 6.96005C15 9.04287 14.0672 11.0162 12.4578 12.3383L8 16ZM3 6H5C6.10457 6 7 6.89543 7 8V9L3 7.5V6ZM11 6C9.89543 6 9 6.89543 9 8V9L13 7.5V6H11Z"/>
+          </svg>
+        </div>
+        
+        <div class="btn-label">
+          <p>ХТОНЧИК</p>
+        </div>
+      </button>
 
+      <button class="btn-bottom-menu" onclick="window.location.href='char-editor-main.html';">
+        <div class="btn-icon-bottom-menu">
+          <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 15L0 4H2L5 7L7 1H9L11 7L14 4H16L14 15H2ZM7.5 9L6 11L7.5 13H8.5L10 11L8.5 9H7.5Z"/>
+          </svg>
+        </div>
+        
+        <div class="btn-label">
+          <p>ПРИКЛЮЧЕНИЯ</p>
+        </div>
+      </button>
+
+      <button class="btn-bottom-menu" onclick="window.location.href='char-editor-main.html';">
+        <div class="btn-icon-bottom-menu">
+          <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.50001 0H9.50001L10.0939 2.37548C10.7276 2.6115 11.3107 2.95155 11.8223 3.37488L14.1782 2.70096L15.6782 5.29904L13.9173 7.00166C13.9717 7.32634 14 7.65987 14 8C14 8.34013 13.9717 8.67366 13.9173 8.99834L15.6782 10.701L14.1782 13.299L11.8223 12.6251C11.3107 13.0484 10.7276 13.3885 10.0939 13.6245L9.50001 16H6.50001L5.90614 13.6245C5.27242 13.3885 4.68934 13.0484 4.17768 12.6251L1.82181 13.299L0.321808 10.701L2.08269 8.99834C2.02831 8.67366 2.00001 8.34013 2.00001 8C2.00001 7.65987 2.02831 7.32634 2.08269 7.00166L0.321808 5.29904L1.82181 2.70096L4.17768 3.37488C4.68934 2.95155 5.27241 2.6115 5.90614 2.37548L6.50001 0ZM8.00001 10C9.10458 10 10 9.10457 10 8C10 6.89543 9.10458 6 8.00001 6C6.89544 6 6.00001 6.89543 6.00001 8C6.00001 9.10457 6.89544 10 8.00001 10Z"/>
+          </svg>
+        </div>
+        
+        <div class="btn-label">
+          <p>НАСТРОЙКИ</p>
+        </div>
+      </button>
+    </div>
+  </div>
+  
   <!-- Link to External JavaScript -->
   <script src="script.js"></script>
   <script src="assets/ui-elements.js"></script>

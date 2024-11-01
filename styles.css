@@ -15,7 +15,6 @@
     color: #00FF00;
   }
 
-  /* Landing page iFrame */
   .iframe-container {
     position: relative;
     top: 0; /* Remove in case of conflicts */
@@ -41,27 +40,6 @@
     font-weight: 100;
     font-size: 20px;
   }
-
-  /* Hero section */
-
-  .hero-content {
-    position: relative;
-    text-align: center;
-    top: 0; /* Remove in case of conflicts */
-    left: 0; /* Remove in case of conflicts */
-    width: 100%;
-    /* border: 2px solid #008000; */
-    width: 350px;  /* Set a fixed width */
-    overflow: hidden; /* Prevent scrolling inside the iframe */
-    transform: translate(10%, 0);
-  }
-
-  .hero-content p {
-    margin-top: 1em;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    line-height: 1.2em;
-  }
   
   /* Container for ASCII animation */
   .ascii-canvas-motion {
@@ -86,4 +64,3 @@
     height: 100%;
     display: block; /* Ensure it's a block-level element */
   }
-  
