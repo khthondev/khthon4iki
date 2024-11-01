@@ -15,8 +15,22 @@
     <div class="scrollable-container">
       <div class="adventure-card">
         <div class="adventure-card-content">
-          <h1>Неебаться Замес</h1>
-          <p>Просто пиздец какой интересный</p>
+          <div class="mini-app-ascii" id="main-screen-ascii">
+            <!-- Embedding the child project -->
+          </div>
+          <iframe class="iframe-container-adventure-card"src="display-main-screen.html"></iframe>
+
+          <h1>ИСКИНТ-0: ВСЁ ШАБЛОН!</h1>
+          <div class="adventure-card-info">*-=УЧЕБНОЕ ПРИКЛЮЧЕНИЕ=-*</div>
+          <p>Старый искусственный интеллект разбушевался, он хочет шаблонизировать всех хтончиков и уничтожить творчество!</p>
+        </div>
+
+        <div class="btn-panel" id="card-button">
+          <button class="btn-menu" onclick="window.location.href='index.html';">
+              <div class="btn-label">
+                <p>НАЧАТЬ ПРИКЛЮЧЕНИЕ</p>
+              </div>
+          </button>
         </div>
       </div>
       <!-- Add more adventure cards here if needed -->
@@ -71,6 +85,7 @@
   
   <!-- Link to External JavaScript -->
   <script src="script.js"></script>
+  <script src="script-main-screen.js"></script>
   <script src="assets/ui-elements.js"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <!--
