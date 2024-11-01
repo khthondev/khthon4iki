@@ -41,6 +41,18 @@ html, body {
   /* overflow: hidden; /* Prevent scrolling inside the iframe */
 }
 
+.iframe-container-adventure-card {
+  flex: 1;
+  border: none;
+  height: 12em;
+  left: 0; /* Remove in case of conflicts */
+  position: relative;
+  top: 0; /* Remove in case of conflicts */
+  width: 100%;
+  margin-bottom: 1em;
+  /* overflow: hidden; /* Prevent scrolling inside the iframe */
+}
+
 #content-flex {
   position: relative;
   width: 100%;
@@ -49,24 +61,42 @@ html, body {
 }
 
 .scrollable-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 70px;
+  bottom: 150px;
   overflow-y: auto;
-  padding: 10px;
   z-index: 2; /* Higher than mini-app-ascii */
 }
 
 /* Adventure Cards */
 
 .adventure-card {
+  text-align: center;
+  align-content: center;
   background-color: #000; /* Background color for the card */
   border: 1px solid #008000; /* Border color */  padding: 1em;
-  margin: 1em 0; /* Space between cards */
-  width: 100%; /* Adjust width to fit within padding */
+  margin: 0 0 1em 0; /* Space between cards */
+  width: 93%; /* Adjust width to fit within padding */
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.adventure-card-info {
+  margin-bottom: .5em;
+  color: #008000;
+}
+
+.adventure-card p {
+  font-size: 1em;
+}
+
+#card-button {
+  margin-top: 1em;
 }
 
 .mini-app-ascii {
@@ -89,8 +119,9 @@ html, body {
 /* Typography */
 h1 {
   color: #FFFF00;
-  font-size: 2em;
-  line-height: 2em;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  letter-spacing: -0.075em;
 }
 
 h2 {
