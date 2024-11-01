@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Хтончики 0.2</title>
+  <link rel="stylesheet" href="assets/mini-app-styles.css">
+  <link rel="stylesheet" href="assets/ui-elements.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Tiny5&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap">
+</head>
+
+<body>
+  
+
+  <div class="container">
+    <div class="menu-section-header">
+      <div class="mini-app-ascii">
+        <!-- Embedding the child project -->
+        <iframe src="ascii-core.html" class="iframe-container"></iframe>
+      </div>
+
+      <div class="app-title">
+          <div class="ascii-divider">┄┄┉┉┅┅* УЧЕБНОЕ ПРИКЛЮЧЕНИЕ *┅┅┉┉┄┄</div>
+          <h1>ИСКИНТ-0: ДРЕВНЕЕ ЗЛО</h1>
+
+          <!--
+          <div class="course-progress">
+            <p>Прогресс 0/12</p>
+          </div>
+          -->
+
+          <p>В этом курсе ты узнаешь всю базу, необходимую для создания увлекательных приключений, а также надерёшь задницу разбушевавшемуся искусственному интеллекту.</p>
+      </div>
+
+      <div class="container">
+        <div class="btn-panel">
+          <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
+              <div class="btn-label">
+                <p>НАЧАТЬ ПРИКЛЮЧЕНИЕ</p>
+              </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="btn-panel">
+        <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
+            <div class="btn-label">
+              <p>НАЧАТЬ ПРИКЛЮЧЕНИЕ</p>
+            </div>
+        </button>
+      </div>
+    </div>
+
+    <!--
+    <div class="btn-panel">
+      <button class="btn-menu" onclick="window.location.href='char-editor-main.html';">
+          <div class="btn-label">
+            <p>СОЗДАТЬ ХТОНЧИКА</p>
+          </div>
+      </button>
+
+      <button class="btn-menu">
+        <div class="btn-icon">
+                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 1H0V5C0 6.65685 1.34315 8 3 8L2.03553 8.96447C1.37249 9.62751 1 10.5268 1 11.4645C1 13.4171 2.58291 15 4.53553 15C5.47322 15 6.37249 14.6275 7.03553 13.9645L8 13L8.96447 13.9645C9.62751 14.6275 10.5268 15 11.4645 15C13.4171 15 15 13.4171 15 11.4645C15 10.5268 14.6275 9.62751 13.9645 8.96447L13 8C14.6569 8 16 6.65685 16 5V1H13L8 6L3 1Z"/>
+                </svg>
+        </div>
+        <p>УЧЕБНЫЕ ПРИКЛЮЧЕНИЯ</p>
+    </button>
+
+    <button class="btn-menu">
+        <div class="btn-icon">
+                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 1V4L4.66667 5.66667L4.2 8H2V6H0V15H6V12C6 10.8954 6.89543 10 8 10C9.10457 10 10 10.8954 10 12V15H16V6H14V8H11.8L11.3333 5.66667L13 4V1H11V3H9V1H7V3H5V1H3Z"/>
+                </svg>
+        </div>
+        <p>СВОБОДНОЕ СОЗДАНИЕ</p>
+    </button>
+    
+    <button class="btn-menu">
+        <div class="btn-icon">
+                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 2H3.58579C4.49129 2 5.35971 2.35971 6 3C6.64029 3.64029 7 4.50871 7 5.41421V11H9V5.41421C9 4.50871 9.35971 3.64029 10 3C10.6403 2.35971 11.5087 2 12.4142 2H16V13H11L9 15H7L5 13H0V2Z"/>
+                </svg>
+        </div>
+        <p>ЭНЦИКЛОПЕДИЯ МАСТЕРА</p>
+    </button>
+
+    <button class="btn-menu" id="btn-disabled">
+        <div class="btn-icon">
+                <svg viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2 15L0 4H2L5 7L7 1H9L11 7L14 4H16L14 15H2ZM7.5 9L6 11L7.5 13H8.5L10 11L8.5 9H7.5Z"/>
+                </svg>
+        </div>
+        <p>ДОСТИЖЕНИЯ</p>
+    </button>
+    -->
+  </div>
+
+  
+
+  <!-- Link to External JavaScript -->
+  <script src="script.js"></script>
+  <script src="assets/ui-elements.js"></script>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <!--
+  <script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      // Show the popup after 2 seconds
+      setTimeout(() => {
+        if (typeof showMessagePopup === 'function') {
+          showMessagePopup('НЕ ВЗДУМАЙ ОБМАНУТЬ МЕНЯ НА ЭТОТ РАЗ. Я ЗНАЮ, ГДЕ ТЫ СОКРОВИЩА ПРИКОПАЛ, ЧЕПУШИЛА.');
+        }
+      }, 2000);
+    });
+  </script>
+  -->
+</body>
+</html>
