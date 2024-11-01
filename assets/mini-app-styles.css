@@ -213,7 +213,7 @@ input::placeholder {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  margin-bottom: 1.5em;
+  margin-bottom: 3.5em;
 }
 
 .btn-bottom-menu {
@@ -304,5 +304,5 @@ input::placeholder {
   color: #008000;
   text-align: center;
   width: 100%;
-  margin-bottom: .5em;
+  margin-bottom: 2em;
 }
