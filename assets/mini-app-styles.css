@@ -1,304 +1,307 @@
 /* Reset default margins and paddings */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Full viewport size */
-  html, body {
-    width: 100%;
-    height: 100%;
-    background-color: #000; /* Background color */
-    font-family: 'JetBrains Mono', monospace;
-    letter-spacing: -.05em;
-    overflow: hidden;
-    color: #00FF00;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  .container {
-    margin: 0 2%;
-    height: 100%;
-    /* overflow-y: auto; /* Enable vertical scrolling */
-  }
+/* Base Styles */
+html, body {
+  background-color: #000; /* Background color */
+  color: #00FF00;
+  display: flex;
+  flex-direction: column;
+  font-family: 'JetBrains Mono', monospace;
+  height: 100%;
+  letter-spacing: -0.05em;
+  overflow: hidden;
+  width: 100%;
+}
 
-  #scroll {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow-y: auto; /* Prevent double scrolling on main container */
-  }
+/* Containers and Layout */
+.container {
+  width: 100%;
+}
 
-  /* Landing page iFrame */
-  .iframe-container {
-    position: relative;
-    top: 0; /* Remove in case of conflicts */
-    left: 0; /* Remove in case of conflicts */
-    border: .1em solid #005000; /* You can adjust or remove the border */
-    width: 100%;  /* Set a fixed width */
-    height: 80vh; /* Set a fixed height */
-    /* overflow: hidden; /* Prevent scrolling inside the iframe */
-  }
+#scroll {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto; /* Prevent double scrolling on main container */
+}
 
-  /* Text styles */
+.iframe-container {
+  flex: 1;
+  border: none;
+  height: 100vh;
+  left: 0; /* Remove in case of conflicts */
+  position: relative;
+  top: 0; /* Remove in case of conflicts */
+  width: 100%;
+  /* overflow: hidden; /* Prevent scrolling inside the iframe */
+}
 
-  h1 {
-    color: #FFFF00;
-    font-size: 2em;
-    line-height: 2em;
-  }
+#content-flex {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
 
-  h2 {
-    font-weight: 100;
-    font-size: 20px;
-  }
+#bottom-menu-flex {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
 
-  /* MAIN MENU */
-  /* Buttons */
+/* Typography */
+h1 {
+  color: #FFFF00;
+  font-size: 2em;
+  line-height: 2em;
+}
 
-  /* Adjust the size of the svg */
-  .btn-icon svg {
-    width: 100%; /* Make svg fill the container's width */
-    height: 100%; /* Make svg fill the container's height */
-  }
+h2 {
+  font-size: 20px;
+  font-weight: 100;
+}
 
-  .btn-panel {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: .75em;
-  }
+label {
+  font-size: 1.1em;
+}
 
-  .btn-icon {
-    position: relative;
-    top: -.25em;
-    left: 0;
-    height: .75em;
-    width: .75em;
-    fill: #00FF00;
-  }
+input {
+  background: none;
+  border-bottom: 0.075em #008000 solid;
+  border-left: none;
+  border-radius: 0;
+  border-right: none;
+  border-top: none;
+  box-sizing: border-box;
+  color: #00FF00;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2em;
+  margin-top: 0.5em;
+  outline: none;
+  padding-bottom: 0.25em;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
 
-  .btn-menu {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 900;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2em;
-    padding: .7em .65em;
-    color: #00FF00;
-    background-color: #000;
-    border: .075em #008000 solid;
-    text-decoration: none;
-    gap: 0;
-  }
+input:hover {
+  border-color: #00FF00; /* Slightly darker border on hover */
+}
 
-  .btn-menu:hover {
-    border: .075em #00FF00 solid;
-    background-color: #00FF00;
-    color: #000;
-  }
+input::placeholder {
+  color: #008000;
+  font-weight: 100;
+}
 
-  .btn-menu:hover svg {
-    fill: #FFFF00;
-  }
+/* Text Inputs */
+.text-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+  text-align: start;
+}
 
-  #btn-disabled {
-    color: #005000;
-    border: .1em #005000 solid;
-  }
+.tip {
+  border-bottom: 0.075em #003000 solid;
+  color: #00FF00;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
 
-  #btn-disabled svg {
-    fill: #005000;
-  }
+.tip-input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1em 0;
+  padding: 1em 0 0 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
 
-  .btn-label {
-    font-size: 1.05em;
-    font-weight: 900;
-  }
+.tip-input p {
+  font-size: 0.9em;
+}
 
-  .btn-info {
-    font-size: .7em;
-    text-align: center;
-    color: #00FF00;
-  }
+.course-progress {
+  color: #008000;
+  margin-bottom: 1em;
+}
 
-  .menu-section-header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin: .5em 0 1em 0;
-    border: .075em #005000 solid;
-    padding: 1em .5em;
-  }
+/* Buttons and Menus */
+.btn-icon {
+  fill: #00FF00;
+  height: 0.75em;
+  left: 0;
+  position: relative;
+  top: -0.25em;
+  width: 0.75em;
+}
 
-  .menu-section-header h1 {
-    font-size: 1.4em;
-  }
+.btn-icon svg {
+  height: 100%; /* Make svg fill the container's height */
+  width: 100%; /* Make svg fill the container's width */
+}
 
-  .ascii-divider {
-    font-size: .9em;
-    color: #00FF00;
-  }
+.btn-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  position: relative;
+  text-align: center;
+}
 
-  .ascii-deco {
-    font-size: 1em;
-    align-content: center;
-    color: #FFFF00;
-  }
+.btn-menu {
+  align-items: center;
+  background-color: #000;
+  border: 0.075em #008000 solid;
+  color: #00FF00;
+  display: flex;
+  flex-direction: column;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2em;
+  font-weight: 900;
+  gap: 0;
+  padding: 0.7em 0.65em;
+  position: relative;
+  text-decoration: none;
+}
 
-  .app-title {
-    padding: .5em 0 1em 0; 
-    margin: 0 4% .5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+.btn-menu:hover {
+  background-color: #00FF00;
+  border: 0.075em #00FF00 solid;
+  color: #000;
+}
 
-  .app-title p {
-    font-size: .9em;
-  }
+.btn-menu:hover svg {
+  fill: #FFFF00;
+}
 
-  /* Inputs */
-  label {
-    font-size: 1.1em;
-  }
+#btn-disabled {
+  border: 0.1em #005000 solid;
+  color: #005000;
+}
 
-  input {
-    width: 100%;
-    color: #00FF00;
-    font-family: 'JetBrains Mono', monospace;
-    background: none;
-    margin-top: .5em;
-    font-size: 1.2em;
-    outline: none;
-    box-sizing: border-box;
-    border-radius: 0;
-    border-bottom: .075em #008000 solid;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    padding-bottom: .25em;
-    transition: border 0.3s ease, box-shadow 0.3s ease;
-  }
+#btn-disabled svg {
+  fill: #005000;
+}
 
-  input:hover {
-    border-color: #00FF00; /* Slightly darker border on hover */
-  }
-  
-  /*
-  input:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  */
+.btn-label {
+  font-size: 1.05em;
+  font-weight: 900;
+}
 
-  input::placeholder {
-    color: #008000;
-    font-weight: 100;
-  }
+.btn-info {
+  color: #00FF00;
+  font-size: 0.7em;
+  text-align: center;
+}
 
-  .text-input {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    margin-bottom: 1.5em;
-  }
+/* Navigation */
+.bottom-menu {
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  left: 0;
+  padding: 1em .5em; /* Optional: Adds some padding for better appearance */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 1em;
+}
 
-  .tip {
-    margin-bottom: 1em;
-    color: #00FF00;
-    padding-bottom: 1em;
-    border-bottom: .075em #003000 solid;
-  }
+.btn-bottom-menu {
+  align-items: center;
+  background-color: #000;
+  border: 0.075em #008000 solid;
+  color: #00FF00;
+  cursor: pointer;
+  display: flex;
+  flex: 1; /* Make each button take equal space */
+  flex-direction: column;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9em;
+  font-weight: 900;
+  gap: 0;
+  letter-spacing: -0.075em;
+  max-width: calc(90% / 3); /* Divide by 3 for three equal buttons */
+  padding: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 1em;
+  position: relative;
+  text-decoration: none;
+}
 
-  .tip-input {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin: 0 0 1em 0;
-    padding: 1em 0 0 0;
-  }
+.btn-bottom-menu:hover {
+  background-color: #002000;
+  border: 0.075em #00FF00 solid;
+}
 
-  .tip-input p {
-    font-size: .9em;
-  }
+.btn-icon-bottom-menu {
+  fill: #00FF00;
+  height: 2em;
+  left: 0;
+  position: relative;
+  top: -0.25em;
+  width: 2em;
+}
 
-  .course-progress {
-    margin-bottom: 1em;
-    color: #008000;
-  }
+.btn-icon-bottom-menu svg {
+  margin-top: .1em;
+  height: 80%;
+  width: 100%;
+}
 
-  /* Footer */
-  .footer-info {
-    width: 100%;
-    text-align: center;
-    color: #008000;
-  }
+/* Headers and Sections */
+.menu-section-header {
+  border: 0.075em #005000 solid;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em 0 1em 0;
+  padding: 1em 0.5em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
 
-  /* Navigation */
+.menu-section-header h1 {
+  font-size: 1.4em;
+}
 
-  .bottom-menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    gap: 0.8em;
-    justify-content: center;
-    background-color: #000; /* Ensure it matches your design */
-    padding: 1em 0; /* Optional: Adds some padding for better appearance */
-    z-index: 1000;
-  }
+.ascii-divider {
+  color: #00FF00;
+  font-size: 0.9em;
+}
 
-  .btn-bottom-menu {
-    font-family: 'JetBrains Mono', monospace;
-    font-weight: 900;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: .9em;
-    padding: .7em .65em;
-    color: #00FF00;
-    background-color: #000;
-    border: .075em #008000 solid;
-    text-decoration: none;
-    padding-top: 1em;
-    padding-bottom: .5em;
-    letter-spacing: -.075em;
-    gap: 0;
-    flex: 1; /* Make each button take equal space */
-    max-width: calc(90% / 3); /* Divide by 4 for four equal buttons */
-  }
+.ascii-deco {
+  align-content: center;
+  color: #FFFF00;
+  font-size: 1em;
+}
 
-  .btn-bottom-menu:hover {
-    border: .075em #00FF00 solid;
-    background-color: #002000;
-  }
+.app-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 4% 0.5em;
+  padding: 0.5em 0 1em 0;
+  text-align: center;
+}
 
-  .btn-icon-bottom-menu {
-    position: relative;
-    top: -.25em;
-    left: 0;
-    height: 2em;
-    width: 2em;
-    fill: #00FF00;
-  }
+.app-title p {
+  font-size: 0.9em;
+}
 
-  .btn-icon-bottom-menu svg {
-    width: 90%;
-    height: 90%;
-  }
-
-  #main-screen-ascii {
-    margin-top: 4%;
-  }
+/* Footer */
+.footer-info {
+  color: #008000;
+  text-align: center;
+  width: 100%;
+}
