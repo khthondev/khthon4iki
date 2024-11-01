@@ -18,12 +18,15 @@
 
   .container {
     margin: 0 2%;
+    height: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
   }
 
   #app {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow-y: hidden; /* Prevent double scrolling on main container */
   }
 
   /* Landing page iFrame */
