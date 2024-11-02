@@ -61,11 +61,11 @@ html, body {
 }
 
 .scrollable-container {
-  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   position: absolute;
+  margin: 0 1em;
   top: 0;
   left: 0;
   right: 0;
@@ -77,13 +77,26 @@ html, body {
 /* Adventure Cards */
 
 .adventure-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   text-align: center;
   align-content: center;
   background-color: #000; /* Background color for the card */
-  border: 1px solid #008000; /* Border color */  padding: 1em;
-  margin: 0 0 1em 0; /* Space between cards */
-  width: 93%; /* Adjust width to fit within padding */
+  border: 1px solid #008000; /* Border color */  
+  padding: 1em;
+  gap: 0.75em;
+  margin-bottom: 1em; /* Space between cards */
+  width: 100%; /* Adjust width to fit within padding */
   box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.btn-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  position: relative;
+  text-align: center;
 }
 
 .adventure-card-info {
@@ -97,6 +110,29 @@ html, body {
 
 #card-button {
   margin-top: 1em;
+}
+
+/* Message Cards */
+.message-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: start;
+  align-content: center;
+  background-color: #000; /* Background color for the card */
+  border: 1px solid #008000; /* Border color */  
+  padding: .75em 1em 1em 1em;
+  gap: 0.75em;
+  margin-bottom: 1em; /* Space between cards */
+  width: 100%; /* Adjust width to fit within padding */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+
+.sender-name {
+  color: #FFFF00;
+  border-bottom: .1em #008000 solid;
+  padding-bottom: .5em;
+  margin-bottom: .75em;
 }
 
 .mini-app-ascii {
@@ -127,6 +163,15 @@ h1 {
 h2 {
   font-size: 20px;
   font-weight: 100;
+  letter-spacing: -.075em;
+}
+
+h3 {
+  letter-spacing: -.075em;
+}
+
+h4 {
+  letter-spacing: -.075em;
 }
 
 label {
@@ -253,8 +298,40 @@ input::placeholder {
 }
 
 .btn-label {
-  font-size: 1.05em;
+  display: flex;
+  flex-direction: row;
+  text-align: start;
+  align-content: start;
+  align-items: center;
+  gap: .5em;
+  font-size: 1em;
   font-weight: 900;
+}
+
+.btn-label p {
+  text-align: start;
+  letter-spacing: -.075em;
+}
+
+.btn-label h4 {
+  letter-spacing: -.075em;
+}
+
+.btn-heading {
+  width: 20%;
+}
+
+.btn-simple-divider {
+  width: 5%;
+  font-weight: 100;
+  color: #008000;
+}
+
+.btn-description {
+  width: 75%;
+  font-weight: 100;
+  font-size: .7em;
+  letter-spacing: -.075em;
 }
 
 .btn-info {
